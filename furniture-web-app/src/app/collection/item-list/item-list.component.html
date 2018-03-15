@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-4 mb-5" *ngFor="let furniture of furnitureList">
+    <div class="card">
+      <div class="text-center"><br />
+        <img class="card-img-top rounded-circle w-50" [src]="furniture.images[0]" >
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">{{furniture.item_code | uppercase}}</h4>
+        <p class="card-text">
+          {{furniture.description | shorten:100}}
+        </p>
+        <div class="text-center">
+          <!-- <a routerLink="/collection/1/furniture/1"
+            class="btn btn-primary">View Detail</a> -->
+          <button (click)="viewDetail(furniture.it_id)"
+            class="btn btn-primary">View Detail</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-md-12 text-center display-4">
+    Our {{ categoryName }} Collection
+  </div>
+</div>
+<div class="row mt-0">
+  <div class="col-md-3 mb-5">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title">Price Range from</h4>
+        <div>
+          <input type="radio" id="customRadio1" name="radioprice" checked> <label class="custom-control-label"
+            for="customRadio1">ALL</label>
+        </div>
+        <div>
+          <input type="radio" id="customRadio2" name="radioprice" > <label class="custom-control-label" for="customRadio2">800 to
+            1000</label>
+        </div>
+        <div>
+          <input type="radio" id="customRadio3" name="radioprice" > <label class="custom-control-label" for="customRadio3">500 to
+            799</label>
+        </div>
+        <div>
+          <input type="radio" id="customRadio3" name="radioprice" > <label class="custom-control-label" for="customRadio3">up to
+            499</label>
+        </div>
+        <hr />
+        <h4 class="card-title">Some Other Info1</h4>
+        <p class="card-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+          text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+        </p>
+        <h4 class="card-title">Some Other Info2</h4>
+        <p class="card-text">
+          Contrary to popular belief, Lorem Ipsum is not simply random
+          text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+      </p> </div>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <!-- Main Content -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
