@@ -11,6 +11,9 @@ export class FurnitureService {
     return this.http.get('/api/category/' + cat_id + '/furniture')
     .map((respone: Response) => {
       const data = respone.json();
+      for (const elem of data) {
+        elem.images = elem.images.split(',');
+      }
       this.furnitureList = data;
       return data;
     },

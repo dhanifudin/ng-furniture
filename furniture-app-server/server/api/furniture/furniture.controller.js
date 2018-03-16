@@ -15,14 +15,13 @@ var furnitureList = [
       ipsum' will uncover many web sites still in their infancy. Various versions
       have evolved over the years, sometimes by accident, sometimes on purpose
       (injected humour and the like).`,
-    images: [
-      apiURI + '/img/row_ac001_0.jpg',
-      apiURI + '/img/row_ac001_1.jpg',
-      apiURI + '/img/row_ac001_2.jpg',
-      apiURI + '/img/row_ac001_3.jpg',
-      apiURI + '/img/row_ac001_4.jpg',
-      apiURI + '/img/row_ac001_5.jpg',
-    ]
+    images:
+      apiURI + '/img/row_ac001_0.jpg' + ',' +
+      apiURI + '/img/row_ac001_1.jpg' + ',' +
+      apiURI + '/img/row_ac001_2.jpg' + ',' +
+      apiURI + '/img/row_ac001_3.jpg' + ',' +
+      apiURI + '/img/row_ac001_4.jpg' + ',' +
+      apiURI + '/img/row_ac001_5.jpg'
   },{
     it_id: '2',
     item_code: 'row_ac002',
@@ -37,12 +36,11 @@ var furnitureList = [
       ipsum' will uncover many web sites still in their infancy. Various versions
       have evolved over the years, sometimes by accident, sometimes on purpose
       (injected humour and the like).`,
-    images: [
-      apiURI + '/img/row_ac002_0.jpg',
-      apiURI + '/img/row_ac002_1.jpg',
-      apiURI + '/img/row_ac002_2.jpg',
-      apiURI + '/img/row_ac002_3.jpg',
-    ]
+    images:
+      apiURI + '/img/row_ac002_0.jpg' + ',' +
+      apiURI + '/img/row_ac002_1.jpg' + ',' +
+      apiURI + '/img/row_ac002_2.jpg' + ',' +
+      apiURI + '/img/row_ac002_3.jpg'
   },{
     it_id: '3',
     item_code: 'row_ac003',
@@ -57,14 +55,13 @@ var furnitureList = [
       ipsum' will uncover many web sites still in their infancy. Various versions
       have evolved over the years, sometimes by accident, sometimes on purpose
       (injected humour and the like).`,
-    images: [
-      apiURI + '/img/row_ac003_0.jpg',
-      apiURI + '/img/row_ac003_1.jpg',
-      apiURI + '/img/row_ac003_2.jpg',
-      apiURI + '/img/row_ac003_3.jpg',
-      apiURI + '/img/row_ac003_4.jpg',
-      apiURI + '/img/row_ac003_5.jpg',
-    ]
+    images:
+      apiURI + '/img/row_ac003_0.jpg' + ',' +
+      apiURI + '/img/row_ac003_1.jpg' + ',' +
+      apiURI + '/img/row_ac003_2.jpg' + ',' +
+      apiURI + '/img/row_ac003_3.jpg' + ',' +
+      apiURI + '/img/row_ac003_4.jpg' + ',' +
+      apiURI + '/img/row_ac003_5.jpg'
   },{
     it_id: '4',
     item_code: 'row_ac004',
@@ -79,11 +76,10 @@ var furnitureList = [
       ipsum' will uncover many web sites still in their infancy. Various versions
       have evolved over the years, sometimes by accident, sometimes on purpose
       (injected humour and the like).`,
-    images: [
-      apiURI + '/img/row_ac004_0.jpg',
-      apiURI + '/img/row_ac004_1.jpg',
-      apiURI + '/img/row_ac004_2.jpg',
-    ]
+    images:
+      apiURI + '/img/row_ac004_0.jpg' + ',' +
+      apiURI + '/img/row_ac004_1.jpg' + ',' +
+      apiURI + '/img/row_ac004_2.jpg'
   },{
     it_id: '5',
     item_code: 'row_ac005',
@@ -98,12 +94,11 @@ var furnitureList = [
     ipsum' will uncover many web sites still in their infancy. Various versions
     have evolved over the years, sometimes by accident, sometimes on purpose
     (injected humour and the like).`,
-    images: [
-      apiURI + '/img/row_ac005_0.jpg',
-      apiURI + '/img/row_ac005_1.jpg',
-      apiURI + '/img/row_ac005_2.jpg',
+    images:
+      apiURI + '/img/row_ac005_0.jpg' + ',' +
+      apiURI + '/img/row_ac005_1.jpg' + ',' +
+      apiURI + '/img/row_ac005_2.jpg' + ',' +
       apiURI + '/img/row_ac005_3.jpg',
-    ]
   }], [{
     it_id: '6', item_code: 'row_sf001', dimension: 'H: 85 W: 67 D: 72',
     price: 1850.90,
@@ -116,11 +111,10 @@ var furnitureList = [
     ipsum' will uncover many web sites still in their infancy. Various versions
     have evolved over the years, sometimes by accident, sometimes on purpose
     (injected humour and the like).`,
-    images: [
-      apiURI + '/img/row_sf001_0.jpg',
-      apiURI + '/img/row_sf001_1.jpg',
+    images:
+      apiURI + '/img/row_sf001_0.jpg' + ',' +
+      apiURI + '/img/row_sf001_1.jpg' + ',' +
       apiURI + '/img/row_sf001_2.jpg',
-    ]
   },{
     it_id: '7',
     item_code: 'row_sf002',
@@ -135,12 +129,11 @@ var furnitureList = [
     ipsum' will uncover many web sites still in their infancy. Various versions
     have evolved over the years, sometimes by accident, sometimes on purpose
     (injected humour and the like).`,
-    images: [
-      apiURI + '/img/row_sf002_0.jpg',
-      apiURI + '/img/row_sf002_1.jpg',
-      apiURI + '/img/row_sf002_2.jpg',
-      apiURI + '/img/row_sf002_3.jpg',
-    ]
+    images:
+      apiURI + '/img/row_sf002_0.jpg' + ',' +
+      apiURI + '/img/row_sf002_1.jpg' + ',' +
+      apiURI + '/img/row_sf002_2.jpg' + ',' +
+      apiURI + '/img/row_sf002_3.jpg'
   },{
     it_id: '8',
     item_code: 'row_ac003',
@@ -155,11 +148,10 @@ var furnitureList = [
       ipsum' will uncover many web sites still in their infancy. Various versions
       have evolved over the years, sometimes by accident, sometimes on purpose
       (injected humour and the like).`,
-    images: [
-      apiURI + '/img/row_sf003_0.jpg',
-      apiURI + '/img/row_sf003_1.jpg',
-      apiURI + '/img/row_sf003_2.jpg',
-    ]
+    images:
+      apiURI + '/img/row_sf003_0.jpg' + ',' +
+      apiURI + '/img/row_sf003_1.jpg' + ',' +
+      apiURI + '/img/row_sf003_2.jpg'
   },{
     it_id: '9',
     item_code: 'row_sf004',
@@ -174,11 +166,10 @@ var furnitureList = [
       ipsum' will uncover many web sites still in their infancy. Various versions
       have evolved over the years, sometimes by accident, sometimes on purpose
       (injected humour and the like).`,
-    images: [
-      apiURI + '/img/row_sf004_0.jpg',
-      apiURI + '/img/row_sf004_1.jpg',
+    images:
+      apiURI + '/img/row_sf004_0.jpg' + ',' +
+      apiURI + '/img/row_sf004_1.jpg' + ',' +
       apiURI + '/img/row_sf004_2.jpg',
-    ]
   },{
     it_id: '10',
     item_code: 'row_sf005',
@@ -193,12 +184,11 @@ var furnitureList = [
       search for 'lorem ipsum' will uncover many web sites still in their
       infancy. Various versions have evolved over the years, sometimes by
       accident, sometimes on purpose (injected humour and the like).`,
-    images: [
-      apiURI + '/img/row_sf005_0.jpg',
-      apiURI + '/img/row_sf005_1.jpg',
-      apiURI + '/img/row_sf005_2.jpg',
+    images:
+      apiURI + '/img/row_sf005_0.jpg' + ',' +
+      apiURI + '/img/row_sf005_1.jpg' + ',' +
+      apiURI + '/img/row_sf005_2.jpg' + ',' +
       apiURI + '/img/row_sf005_3.jpg',
-    ]
   }]
 ]
 
