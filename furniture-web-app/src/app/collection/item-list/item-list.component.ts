@@ -10,13 +10,17 @@ import { Furniture } from '../../shared/model/furniture.model';
   styleUrls: ['./item-list.component.css']
 })
 export class ItemListComponent implements OnInit {
+
   categorySelected = '0';
+
   furnitureList: Furniture[] = [];
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private categorySrv: CategoryService, private furnitureSrv: FurnitureService) {
-  }
+    private categorySrv: CategoryService,
+    private furnitureSrv: FurnitureService
+  ) {}
 
   ngOnInit() {
     this.route.params
@@ -24,9 +28,15 @@ export class ItemListComponent implements OnInit {
         this.categorySelected = params['cat_id'];
         this.categorySrv.selectCategory(this.categorySelected);
         this.furnitureList = [];
-        this.furnitureSrv.loadFurniture(this.categorySelected)
+        // this.furnitureSrv.loadFurniture(this.categorySelected)
+        //   .subscribe((result) => {
+        //     this.furnitureList = result;
+        //   });
+        this.furnitureSrv
+          .getFurnituresByCategory(this.categorySelected)
           .subscribe((result) => {
             this.furnitureList = result;
+            console.log(this.furnitureList);
           });
       });
   }

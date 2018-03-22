@@ -9,6 +9,7 @@ import { FurnitureService } from '../../shared/service/furniture.service';
   styleUrls: ['./item-detail.component.css']
 })
 export class ItemDetailComponent implements OnInit { categorySelected;
+
   itemSelected;
   item: Furniture = new Furniture();
 
@@ -20,13 +21,16 @@ export class ItemDetailComponent implements OnInit { categorySelected;
 
   ngOnInit() {
     this.categorySelected = this.route.snapshot.params['cat_id'];
-    this.itemSelected     = this.route.snapshot.params['it_id'];
-    const result = this.furnitureSvc.getFurniture(this.itemSelected);
-    if (result === undefined) {
-      this.router.navigate(['/home']);
-    } else {
-      this.item = result;
-    }
+    this.itemSelected = this.route.snapshot.params['it_id'];
+    this.furnitureSvc
+      .getFurnitureDetails(this.categorySelected, this.itemSelected)
+      .subscribe((result) => {
+        if (result === undefined) {
+          this.router.navigate(['/home']);
+        } else {
+          this.item = result;
+        }
+      });
   }
 
   backToCollection() {
