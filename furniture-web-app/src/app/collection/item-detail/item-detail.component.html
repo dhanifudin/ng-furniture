@@ -4,7 +4,7 @@
       <div class="card-body">
         <h4 class="card-title">{{item.item_code | uppercase}}:: Product Images</h4>
         <div class="text-center">
-          <img *ngFor="let image of item.images" class="card-img-top col- md-5 px-0" [src]="image" alt="armchair image">
+          <img *ngFor="let image of item.images" class="card-img-top col- md-5 px-0" [src]="image | sanitizeUrl" alt="armchair image">
         </div>
       </div>
     </div>

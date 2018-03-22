@@ -18,6 +18,7 @@ import { AppRoutingModule } from './/app-routing.module';
 
 import { CategoryService } from './shared/service/category.service';
 import { FurnitureService } from './shared/service/furniture.service';
+import { SanitizeUrlPipe } from './sanitize-url.pipe';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FurnitureService } from './shared/service/furniture.service';
     ItemDetailComponent,
     ContactUsComponent,
     PageNotFoundComponent,
-    ShortenPipe
+    ShortenPipe,
+    SanitizeUrlPipe
   ],
   imports: [
     BrowserModule,
