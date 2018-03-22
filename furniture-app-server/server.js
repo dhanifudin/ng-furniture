@@ -6,10 +6,10 @@ require('dotenv').config()
 const express = require('express')
 const path = require('path')
 
-const loginRoute = require('./controller/login')
-const userRoute = require('./controller/user')
-const categoryRoute = require('./controller/category')
-const feedbackRoute = require('./controller/feedback')
+const loginRoute = require('./routes/login')
+const userRoute = require('./routes/user')
+const categoryRoute = require('./routes/category')
+const feedbackRoute = require('./routes/feedback')
 
 const app = express()
 
