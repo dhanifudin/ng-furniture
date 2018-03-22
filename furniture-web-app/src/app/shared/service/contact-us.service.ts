@@ -11,13 +11,10 @@ export class ContactUsService {
   constructor(private http: Http) { }
 
   addFeedback(feedback) {
-    console.log(feedback);
     return this.http
       .post('/api/feedback', feedback)
       .map(response => {
-        console.log(response);
-        // return new Feedback(response.json());
-        return response.json();
+        return response;
       });
   }
 

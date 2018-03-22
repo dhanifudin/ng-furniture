@@ -19,8 +19,9 @@ router.get('/', (req, res) => {
 
 router.get('/:cat_id/furniture', (req, res) => {
   const { cat_id } = req.params
-  Category.where({ cat_id })
-    .fetch({ withRelated: ['furnitures'] })
+  Furniture.where({ cat_id })
+    // .fetch({ withRelated: ['furnitures'] })
+    .fetchAll()
     .then((result) => {
       res.json(result)
     })

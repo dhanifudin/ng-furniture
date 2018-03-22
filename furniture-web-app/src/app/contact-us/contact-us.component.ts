@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ContactUsService } from '../shared/service/contact-us.service';
 
+import 'rxjs/Rx';
+
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -43,9 +45,10 @@ export class ContactUsComponent implements OnInit {
   onSubmit() {
     const feedback = this.contactForm.value;
     this.contactUsService.addFeedback(feedback)
-      .subscribe((response: Response) => {
-        console.log(response.status);
-        this.submitted = true;
+      .subscribe(response => {
+        if (response.status === 200) {
+          this.submitted = true;
+        }
       });
   }
 

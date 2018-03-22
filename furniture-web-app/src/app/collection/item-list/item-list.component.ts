@@ -28,15 +28,10 @@ export class ItemListComponent implements OnInit {
         this.categorySelected = params['cat_id'];
         this.categorySrv.selectCategory(this.categorySelected);
         this.furnitureList = [];
-        // this.furnitureSrv.loadFurniture(this.categorySelected)
-        //   .subscribe((result) => {
-        //     this.furnitureList = result;
-        //   });
         this.furnitureSrv
           .getFurnituresByCategory(this.categorySelected)
           .subscribe((result) => {
             this.furnitureList = result;
-            console.log(this.furnitureList);
           });
       });
   }
